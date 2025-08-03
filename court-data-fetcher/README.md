@@ -1,20 +1,18 @@
 # Court-Data Fetcher & Mini Dashboard
 
-## Court Targeted
-Faridabad District Court – https://districts.ecourts.gov.in/faridabad
+## Objective
+A web app that allows users to input case details and fetch court case metadata and orders.
 
-## Tech Stack
-- Python 3 + Flask
-- Selenium + BeautifulSoup
-- SQLite for query logging
-- HTML/CSS for frontend
+## Stack
+- Python + Flask
+- SQLite
+- Selenium (planned for real scraping)
+- HTML + CSS
 
-## How to Run Locally
+## How to Run
 
 ```bash
-git clone <your_repo_link>
-cd court-data-fetcher
 python -m venv venv
-source venv/bin/activate  # or venv\\Scripts\\activate on Windows
+source venv/bin/activate   # or venv\\Scripts\\activate
 pip install -r requirements.txt
 python app.py
