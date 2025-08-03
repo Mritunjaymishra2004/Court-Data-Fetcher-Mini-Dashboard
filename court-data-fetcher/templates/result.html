@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Details</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+  <h2>Case Details</h2>
+  <p><strong>Parties:</strong> {{ result.parties }}</p>
+  <p><strong>Filing Date:</strong> {{ result.filing_date }}</p>
+  <p><strong>Next Hearing Date:</strong> {{ result.next_hearing }}</p>
+  <a href="{{ result.order_pdf }}" target="_blank">Download Latest Order</a>
+</div>
+</body>
+</html>

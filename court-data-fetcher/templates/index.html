@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Case Lookup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+  <h2>Search Court Case</h2>
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+  <form method="POST">
+    <label>Case Type:</label><input name="case_type" required>
+    <label>Case Number:</label><input name="case_number" required>
+    <label>Filing Year:</label><input name="year" required>
+    <button type="submit">Fetch Case</button>
+  </form>
+</div>
+</body>
+</html>
