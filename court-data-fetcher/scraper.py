@@ -8,7 +8,7 @@ def fetch_case_details(case_type, case_number, year):
         "parties": f"{case_type}-{case_number}/{year} Plaintiff vs Defendant",
         "filing_date": "2023-01-01",
         "next_hearing": "2025-09-01",
-        "order_pdf": "https://example.com/x.pdf"
+        "order_pdf": "https://xyz.com/x.pdf"
     }
 
     return result, html
